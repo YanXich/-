@@ -12,6 +12,8 @@ python xfyun.py
 python wisemodel.py
 
 麦克风输入 → 语音识别(ASR) → 自然语言理解(NLU) → 大语言模型(LLM) → 语音合成(TTS) → 扬声器输出
+
+
 life/
 ├── requirements.txt    # Python依赖包列表
 ├── aliyun.py          # 阿里云语音服务集成
