@@ -9,7 +9,7 @@ from typing import Optional, Callable, List, Dict, Any
 from enum import Enum
 
 # 在这里硬编码API密钥
-API_KEY = "   "  
+API_KEY = " "  
 
 class TurnDetectionMode(Enum):
     SERVER_VAD = "server_vad"
