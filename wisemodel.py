@@ -4,7 +4,7 @@ import json
 url = "https://laiyeapi.aifoundrys.com:7443/v1/chat/completions"
 
 headers = {
-    "Authorization": "wisemodel-hetmlmnadkjujzeligkt", 
+    "Authorization": "   ", 
     "Content-Type": "application/json"
 }
 
