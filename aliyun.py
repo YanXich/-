@@ -12,7 +12,7 @@ import queue
 import time
 
 # 设置API Key
-dashscope.api_key = "sk-4790da8d470049e9be356a6c0179e5b9"
+dashscope.api_key = "  "
 
 # 全局变量
 mic = None
@@ -263,7 +263,7 @@ class TTSCallback(ResultCallback):
 def llm_worker():
     """LLM处理线程"""
     client = OpenAI(
-        api_key="sk-4790da8d470049e9be356a6c0179e5b9",
+        api_key="  ",
         base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
     )
     
