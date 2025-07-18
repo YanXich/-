@@ -9,7 +9,7 @@ import websockets
 from typing import Optional, Callable, Dict, Any
 
 # 在这里硬编码API密钥
-DASHSCOPE_API_KEY = "sk-4790da8d470049e9be356a6c0179e5b9"
+DASHSCOPE_API_KEY = "   "
 
 # 创建一个全局音频队列和播放线程
 audio_queue = queue.Queue()
