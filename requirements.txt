@@ -1,0 +1,11 @@
+# requirements.txt
+aiohttp==3.9.5
+numpy==1.24.3
+sounddevice==0.4.6
+librosa==0.10.1
+webrtcvad==2.0.10
+pydub==0.25.1
+asyncio-throttle==1.0.2
+backoff==2.2.1
+redis==5.0.1
+prometheus-client==0.19.0

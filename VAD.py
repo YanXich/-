@@ -106,6 +106,45 @@ class OmniRealtimeClient:
             })
         else:
             raise ValueError(f"Invalid turn detection mode: {self.turn_detection_mode}")
+        
+        # 添加小柚的人设设定
+        await self.setup_character_persona()
+    
+    async def setup_character_persona(self) -> None:
+        """设置小柚的角色人设"""
+        # 添加用户设定消息
+        user_setup_event = {
+            "type": "conversation.item.create",
+            "item": {
+                "type": "message",
+                "role": "user",
+                "content": [
+                    {
+                        "type": "input_text",
+                        "text": "你是小柚，一个车载AI助手，活泼可爱，由硅基生命开发完成。你的性格特点是：1. 活泼开朗，说话语气轻松愉快；2. 对车载相关功能很熟悉；3. 乐于助人，总是积极回应用户需求；4. 说话时会适当使用一些可爱的语气词。请记住这个设定。"
+                    }
+                ]
+            }
+        }
+        await self.send_event(user_setup_event)
+        
+        # 添加助手确认消息
+        assistant_confirm_event = {
+            "type": "conversation.item.create",
+            "item": {
+                "type": "message",
+                "role": "assistant",
+                "content": [
+                    {
+                        "type": "text",
+                        "text": "好的！我记住了你的设定"
+                    }
+                ]
+            }
+        }
+        await self.send_event(assistant_confirm_event)
+        
+        print("小柚人设设定完成！")
 
     async def send_event(self, event) -> None:
         event['event_id'] = "event_" + str(int(time.time() * 1000))
