@@ -1,3 +1,4 @@
+
 life/
 ├── requirements.txt    # Python依赖包列表
 ├── .gitignore         # Git忽略文件配置
@@ -7,6 +8,7 @@ life/
 ├── wisemodel.py       # 智谱模型API接口
 └── xfyun.py           # 讯飞语音服务集成
 
+运行方式：
 1. 阿里云语音助手
 python aliyun.py
 2. Qwen-Omni实时交互+VAD语音检测版本
