@@ -27,9 +27,9 @@ logger = logging.getLogger(__name__)
 class XiaoyouConfig:
     """讯飞的配置信息"""
     # 您的讯飞开放平台应用配置
-    APP_ID = "9d69f5d1"
-    API_SECRET = "OGU2ODIxOTI0ZmI2NjgwMzc0MGRhNzlh"
-    API_KEY = "3a861a0ce1bb7d66cc59286677018f86"
+    APP_ID = "  "
+    API_SECRET = "  "
+    API_KEY = "  "
     
     # API端点
     ASR_URL = "wss://iat-api.xfyun.cn/v2/iat"
