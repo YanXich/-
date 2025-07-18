@@ -12,7 +12,7 @@ import queue
 import time
 
 # 设置API Key
-dashscope.api_key = "  "
+dashscope.api_key = " "
 
 # 全局变量
 mic = None
